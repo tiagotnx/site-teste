@@ -1,0 +1,33 @@
+<template>
+    <tr>
+        <td>
+            <input type="number" name="parcela" class="parcela" readonly />
+        </td>
+        <td>
+            <input
+                type="text"
+                name="valorParcela"
+                class="valorParcela"
+                placeholder="R$ 0,00"
+                required
+            />
+        </td>
+        <td>
+            <input
+                type="text"
+                name="valorPago"
+                class="valorPago"
+                placeholder="R$ 0,00"
+            />
+        </td>
+        <td>
+            <input type="date" name="vencimento" class="vencimento" required />
+        </td>
+        <td>
+            <input type="date" name="pagamento" class="pagamento" desabre />
+        </td>
+        <td>
+            <input type="checkbox" name="pago" class="pago" readonly />
+        </td>
+    </tr>
+</template>

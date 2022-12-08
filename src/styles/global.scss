@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+@import "./header.scss";
+@import "./footer.scss";
+
+:root {
+    --clr-primary-400: hsl(158, 100%, 92%);
+    --clr-primary-500: hsl(158, 36%, 20%);
+    --clr-secondary-200: hsl(72, 13%, 92%);
+
+    --clr-neutral-900: hsl(212, 21%, 14%);
+    --clr-neutral-400: hsl(228, 12%, 48%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-inter: "Inter", sans-serif;
+
+    --fw-fine: 300;
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--ff-inter);
+    color: var(--clr-neutral-900);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--clr-secondary-200);
+}
+
+body main {
+    flex: 1 auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    transition: 0.2s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 1rem;
+    margin: 70px auto;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}

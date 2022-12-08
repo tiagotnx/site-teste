@@ -1,0 +1,71 @@
+.form {
+    justify-items: center;
+    overflow-x: scroll;
+}
+
+.form table::-webkit-scrollbar {
+    display: none;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.parcela {
+    width: 30px;
+}
+
+.valorParcela,
+.valorPago,
+.vencimento,
+.pagamento {
+    width: 150px;
+    height: 30px;
+}
+
+.main {
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    align-content: flex-start;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#addPortion,
+#save {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    color: var(--clr-neutral-100);
+}
+
+#addPortion {
+    background-color: rgb(116, 116, 255);
+}
+
+#addPortion:hover {
+    background-color: rgb(70, 70, 255);
+}
+
+#save {
+    background-color: rgb(0, 161, 0);
+}
+
+#save:hover {
+    background-color: rgb(0, 128, 0);
+}
+
+.pago {
+    margin: 0 0.7rem;
+}
+
+.results {
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Financiamento</title>
+        <base href="./" />
+        <link rel="stylesheet" href="./src/styles/financings.scss" />
+    </head>
+    <body>
+        <header id="header"></header>
+        <main class="main grid">
+            <h2 class="form-title">Parcelas do financiamento</h2>
+            <form action="" class="form grid" id="form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Valor</th>
+                            <th>Recebido</th>
+                            <th>Vencimento</th>
+                            <th>Pagamento</th>
+                            <th>Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </form>
+            <div class="button-container">
+                <button type="button" id="addPortion" form="form">
+                    Adicionar parcela
+                </button>
+                <button type="submit" id="save" form="form">Salvar</button>
+            </div>
+
+            <article class="results">
+                <h1>JSON</h1>
+                <p id="json"></p>
+            </article>
+        </main>
+        <footer id="footer"></footer>
+        <script type="module" src="./src/main.ts"></script>
+        <script type="module" src="./src/ts/financing.ts"></script>
+    </body>
+</html>

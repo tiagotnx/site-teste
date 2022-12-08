@@ -1,0 +1,106 @@
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(-clr-neutral-100);
+    z-index: 7;
+    padding: 1rem;
+    box-shadow: 0 6px 15px 0 hsla(0, 0%, 0%, 0.05);
+    height: 70px;
+    margin: 0 0 1.5rem 0;
+}
+
+#header button {
+    background-color: transparent;
+}
+
+#header a {
+    color: var(--clr-neutral-900);
+    transition: 0.2s ease;
+    padding: 3px 0;
+}
+
+#header nav ul li a:hover {
+    color: var(--clr-primary-500);
+
+    border-bottom: 2px solid var(--clr-primary-500);
+}
+
+#header nav {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    background-color: var(--clr-neutral-100);
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    z-index: 9;
+    transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    padding: 1rem;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: hsl(228, 12%, 48%);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 8;
+    transition: 0.25s ease;
+}
+
+#header.active .overlay {
+    opacity: 0.5;
+    pointer-events: all;
+}
+
+#header.active nav {
+    display: block;
+    transform: translateX(320px);
+    transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
+}
+
+#header #btn-close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+#header.active nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+@media (min-width: 900px) {
+    #header {
+        position: relative;
+        margin: 0 auto 2rem;
+        overflow: hidden;
+    }
+    #header.active nav,
+    #header nav {
+        all: unset;
+    }
+
+    #header nav ul,
+    #header.active nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #header .overlay {
+        all: unset;
+    }
+
+    #header #btn-open,
+    #header #btn-close {
+        display: none;
+    }
+}

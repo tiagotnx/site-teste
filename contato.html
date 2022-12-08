@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato</title>
+        <base href="./" />
+        <link rel="stylesheet" href="./src/styles/contact.scss" />
+    </head>
+    <body>
+        <header id="header"></header>
+        <main>
+            <section class="contact-container grid">
+                <article class="contacts grid">
+                    <h2 class="contacts-title">Meios para contato</h2>
+                    <div class="flex">
+                        <p>E-mail:</p>
+                        <a href="mailto:test@gmail.com">teste@gmail.com</a>
+                    </div>
+                    <div class="flex">
+                        <p>Tlefone:</p>
+                        <a href="tel:+559999999999">(99) 9999-9999</a>
+                    </div>
+                    <iframe
+                        class="iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.028141913614!2d-51.93674332358484!3d-23.423350556538455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0d257dacde5%3A0xac12fb5b21980c70!2sAv.%20XV%20de%20Novembro%2C%20170%20-%20Zona%2001%2C%20Maring%C3%A1%20-%20PR%2C%2087013-230!5e0!3m2!1spt-BR!2sbr!4v1670129844022!5m2!1spt-BR!2sbr"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    <address>
+                        Av. XV de Novembro, 170 - Zona 01, Maringá - PR,
+                        87013-230
+                    </address>
+                </article>
+                <form action="">
+                    <fieldset class="grid contact-form">
+                        <legend>Envie uma mensagem</legend>
+                        <label for="name"
+                            >Nome<input
+                                type="text"
+                                id="name"
+                                placeholder="Insira seu nome"
+                                required
+                        /></label>
+                        <label for="tel"
+                            >Telefone<input
+                                type="tel"
+                                id="tel"
+                                placeholder="(99) 9999-9999"
+                                required
+                        /></label>
+                        <label for="email"
+                            >E-mail<input
+                                type="email"
+                                id="email"
+                                placeholder="Insira seu e-mail"
+                                required
+                        /></label>
+                        <label for="about"
+                            >Assunto<input
+                                type="text"
+                                id="about"
+                                placeholder="Insira o assunto"
+                                required
+                        /></label>
+                        <label for="message"
+                            >Mensagem
+                            <textarea
+                                name="about"
+                                id="about"
+                                cols="auto"
+                                rows="5"
+                                placeholder="Insira sua mensagem"
+                                required
+                            ></textarea>
+                        </label>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+        <script type="module" src="./src/main.ts"></script>
+        <script type="module" src="./src/ts/contact.ts"></script>
+    </body>
+</html>

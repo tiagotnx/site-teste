@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <base href="./" />
+        <link rel="stylesheet" href="./src/styles/home.scss" />
+    </head>
+    <body>
+        <header id="header"></header>
+        <main>
+            <section data-slide="slide" class="slide">
+                <ul class="slide-items">
+                    <li>
+                        <img
+                            src="./public/images/img-1.jpg"
+                            alt="Grupo de pessoas alegres e com os braços erguidos."
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="./public/images/img-2.jpg"
+                            alt="Homem sentado olhando para um tablet."
+                        />
+                    </li>
+                </ul>
+                <nav class="slide-nav">
+                    <div class="slide-thumb"></div>
+                    <button class="slide-prev">Anterior</button>
+                    <button class="slide-next">Próximo</button>
+                </nav>
+            </section>
+            <section class="news">
+                <h2 class="news-title">Notícias</h2>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <a
+                            href="https://www.infomoney.com.br/mercados/ursula-von-der-leyen-confirma-acordo-sobre-teto-para-petroleo-da-russia/"
+                            target="_blank"
+                            >Ursula von der Leyen confirma acordo sobre teto
+                            para petróleo da Rússia</a
+                        >
+                    </li>
+                    <li class="news-item">
+                        <a
+                            href="https://www.infomoney.com.br/mercados/petroleo-cai-15-antes-de-reuniao-da-opep-e-proibicoes-ao-oleo-russo/"
+                            target="_blank"
+                            >Petróleo cai 1,5% antes de reunião da Opep+ e
+                            proibições ao óleo russo</a
+                        >
+                    </li>
+                    <li class="news-item">
+                        <a
+                            href="https://www.infomoney.com.br/carreira/copa-na-firma-sou-obrigado-a-trabalhar-durante-os-jogos-do-brasil/"
+                            target="_blank"
+                            >Copa na firma: sou obrigado a trabalhar durante os
+                            jogos do Brasil?</a
+                        >
+                    </li>
+                    <li class="news-item">
+                        <a
+                            href="https://www.infomoney.com.br/mercados/bhp-entra-com-pedido-de-contribuicao-contra-vale-vale3-em-processos-por-mariana/"
+                            target="_blank"
+                            >BHP entra com pedido de contribuição contra Vale em
+                            processos por Mariana</a
+                        >
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+        <script type="module" src="./src/main.ts"></script>
+        <script type="module" src="./src/ts/slider.ts"></script>
+    </body>
+</html>
